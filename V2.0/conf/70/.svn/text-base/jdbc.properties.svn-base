@@ -1,0 +1,14 @@
+####################################
+## Staging Environment jdbc.properties
+# Database Connectivity Properties
+####################################
+
+driver=oracle.jdbc.driver.OracleDriver
+url=jdbc:oracle:thin:@192.168.102.105:1521:jrtdbtest
+username=jrtsch
+password=jrt2010
+
+non.db.driver=com.mysql.jdbc.Driver
+non.db.url=jdbc:mysql://192.168.102.105/sms?characterEncoding=utf-8
+non.db.username=jrtConsole
+non.db.password=jrtConsole321

@@ -1,0 +1,15 @@
+K 10
+svn:ignore
+V 114
+.classpath
+.externalToolBuilders
+.project
+.settings
+MANIFEST.MF
+buildinfo.properties
+dist
+target
+w.war
+w.war.prod
+
+END

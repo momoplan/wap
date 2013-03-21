@@ -1,0 +1,359 @@
+######
+#充值相关配置信息
+######
+#商户编号(真实)
+p1_MerId=10000991107
+#商户密钥(真实)
+keyValue=1p5dAK73145l2YTP03UHdey16cPeHo4729594mrwJJP5LiFY87a2YVE00k1b
+
+#电信互联星空 3DES密钥
+#vnetKey=GZ5OFL75C6F6JZIZV7YQ9SIC742LW0RHY4MX6ATI2292KJL7
+#电信互联星空 3DES密钥(正式)
+vnetKey=IXIKTH8M3TR5YWBS7M4O4U2VANJO2G6US8NZNW4J8O8QUIB2
+#银行卡充值WEB地址(真实地址)
+webYeepayCommonReqURL=https://www.yeepay.com/app-merchant-proxy/node
+#银行卡充值WAP地址(真实地址)
+wapYeepayCommonReqURL=http://www.yeepay.com/app-merchant-proxy/wap/controller.action
+#建设银行银行卡充值WAP地址
+CCBWAPYeepayCommonReqURL=https://www.yeepay.com/app-merchant-proxy/node
+#点卡充值WEB地址(真实地址)
+webPointReqURL=https://www.yeepay.com/app-merchant-proxy/command.action?
+#点卡充值Wap地址(真实地址)
+wapPointReqURL=https://www.yeepay.com/app-merchant-proxy/command.action?
+
+#点卡充值WEB地址http形式(真实地址)
+webHttpPointReqURL=http://www.yeepay.com/app-merchant-proxy/command.action?
+#点卡充值Wap地址http形式(真实地址)
+wapHttpPointReqURL=http://www.yeepay.com/app-merchant-proxy/command.action?
+
+
+#银行卡充值商户接收支付成功数据的WAP服务器地址
+wapYeepayCommonResponseURL=http://219.148.162.68/jrtWap/wapBankChargeServlet?
+#点卡充值商户接收支付成功数据的WEB服务器地址
+wapPointResponseURL=http://219.148.162.68/jrtWap/WapPointCardChargeServlet?
+
+#手机客户端点卡充值商户支付成功的wap服务器地址
+wapMobilePointResponseURL=http://219.148.162.68/jrtWAPSite1.0/yeePayCardChargeServlet?
+#手机客户端银行卡充值商户支付成功的wap服务器地址
+wapMobileBankCommonResponseURL=http://219.148.162.68/jrtWAPSite1.0/bankChargeServlet?
+
+#点卡充值时的step、port(http)
+httpstep=1
+httpip=www.yeepay.com
+httpport=80
+#点卡充值时的step、port(https)
+httpsstep=1
+httpsip=www.yeepay.com
+httpsport=443
+
+#订单查询和退款地址
+queryRefundReqURL=https://www.yeepay.com/app-merchant-proxy/command
+yeepayCommonReqURL=https://www.yeepay.com/app-merchant-proxy/node
+#订单查询和退款地址(真实地址)
+#queryRefundReqURL=http://tech.yeepay.com:8080/robot/debug.action
+#onlinePaymentReqURL=https://www.yeepay.com/app-merchant-proxy/node
+#yeepayCommonReqURL=http://tech.yeepay.com:8080/robot/debug.action
+#onlinePaymentReqURL=http://tech.yeepay.com:8080/robot/debug.action
+#yeepayCommonReqURL=http://localhost:8081/jrtWAPSite1.0/bankChargeForReturnDemo.jsp
+#yeepayCommonReqURLWAP=http://tech.yeepay.com:8080/robot/debug.action
+
+######
+#大客户赠送相关配置信息
+######
+#前置 需要维护的IP地址
+constantServer=0002
+#初始化开始时间
+stateTime=01:00:00
+#最大时间间距
+endTime=03:00:00
+
+#短信通道文档
+logconfig=c:\\log4j.properties
+
+####################
+# 获得短信通道参数
+####################
+#短信网址名称
+localhost=http://www.91600.com.cn/send?
+#用户名
+smsaddr=106691602277
+#短信网址的密码
+pass=jrtryc
+#启动短信通知服务 ：1为启动 0为关闭
+state=0
+
+#####
+#zhang wu pei zhi
+#####
+####################
+#  get tfeeprogramId (获得方案Id)
+####################
+
+#获得提现费率方案 Id
+drawId=FP0001
+#获200元以上提现费率的名称
+drawName=draw1
+
+#获得易宝点卡充值费率方案Id
+epayDiankabizId=FP0002
+
+
+####################
+# 获得机构账户表机构账目编号
+####################
+#获得用户总账户编号(需要进行内部对账)
+userGeneralAccount=p00001
+#获得平台手续费总账户编号(需要进行内部对账)
+feeGeneralAccount=p00002
+#获得银行总账户编号(需要进行内部对账)
+bankGeneralAccount=p00003 
+#获得卡充值账户编号(需要进行内部对账)
+cardGeneralAccount=p00004
+#获得福彩中心总账户编号(需要进行内部对账)
+tlotGeneralAccount=p00005
+#获得平台在福彩中心总账户余额编号
+balanceGeneralAccount=p00006
+#获得平台大账户的总账户编号
+strongUserAccount=p00007
+
+####################
+# 获得交易类型
+####################
+#获得投注交易类型
+betType=1
+#获得银行卡充值交易类型
+despositByBankType=2
+#获得平台卡充值交易类型
+despositByCardType=3
+#获得结算交易类型
+torgstlType=4
+#获得提现交易类型
+drawType=5
+#获得兑奖划款交易类型
+prizeType=6
+#获得返款类型
+fankuanType=7
+#获得追号套餐交易
+tsubscribeType=8
+#获得点卡充值交易类型
+diankabizType=10
+#获得调账交易类型
+adjustingType=11
+#大账户充值类型
+strongUser=9
+
+
+####################
+# 获得对账文件路径 即相关ftp信息
+####################
+
+#平台从易宝下载文件存放位置
+FDownLoadFilePath=D:/accountCheckingFiles/
+#易宝对账文件的ftp主机名
+hostName=reportftp.yeepay.com
+#易宝对账文件的ftp端口
+port=21
+#易宝对账文件的ftp登录名
+ftpUserName=trx10000991107
+#易宝对账文件的ftp密码
+ftpPassWord=4fc1c9a952a
+
+#平台与福彩对账文件存放位置
+FuCaiDownLoadFilePath=D:/fucaiFtp/
+
+
+####################
+# 获得相关机构和渠道编号
+####################
+
+#获得易宝渠道编号
+yeepayNo=y00003
+#金软通平台渠道号
+jrtNo=000001
+#福彩中心的渠道号
+fuCaiNo=000002
+
+########################################################################################################
+#测试服务器地址
+baseUrl=http://219.148.162.70:8000/jrtLot/
+baseUrlPV=http://192.168.0.118/tongji/
+baseUrlword=http://219.148.162.70:8000/jrtLot/keyword/
+UploadUrl = http://192.168.0.118/
+lottery = http://192.168.0.42:8080/lottery/
+wirelessSupport=http://192.168.0.118:8090/wirelessSupport/
+chargeCenter = http://192.168.0.118:8090/ChargeCenter/
+mgr =http://192.168.0.118:8000/mgr/
+msgcenter = http://192.168.0.118:8000/msgcenter/
+trendChartPath = /home/appusr/tomcat8000/webapps/w/wap/trendChartImage/
+#赠送
+presentcenter = http://192.168.0.118:8000/presentcenter/
+#留言
+message = http://192.168.0.118:8090/message/
+#积分
+scorecenter=http://192.168.0.118:8000/scorecenter/
+#users
+usersCenterUrl = http://users.ruyicai.com/
+#中奖排行
+ranking = http://192.168.0.118:8000/ranking/
+#遗漏
+prizeData = http://192.168.0.118:8080/prizeData/
+
+#下载图铃
+downUrl = http://192.168.0.118/
+#体彩运营开关   0关  1开
+TCDefine=1
+#体彩追号开关
+array3addNumberSwitch=1
+
+#图片上传地址
+picture_upload=/appusr/WapNews/
+#合买3D开关
+HM3DSwitch=1
+#合买七乐彩开关
+HMQlcSwitch=1
+#合买开关
+HMSwitch=1
+#最低可提现余额
+lowestWithdrawal=2
+#山东十一运夺金开关0关1开
+elevenDuoJinSwitch=1
+
+#山东十一运夺金特别追号开关 0关 1开
+elevenDuojinTBZHSwitch=1
+#赠送彩票时赠言长度
+donationLanguageLength=20
+
+#赠送信息配置
+donation_file=/home/appusr/WapNews/donation.properties
+
+#错误页面跳转时间
+errorPageGotoTime=30
+
+#七乐彩运营开关   0关  1开
+qilecaiDefine=1
+#大乐透运营开关
+TCDefineDLT = 1
+#排列三运营开关
+TCDefineArray3 = 1
+#测试系统与正式系统开关   0关  1开
+testSwitch=0
+
+#客户端链接开关 0关 1开
+clientSwitch=1
+#排列五运营开关   0关  1开
+TCDefineArray5=1
+#时时彩运营开关 0关1开
+shishicaiSwitch=1
+
+#11选5开关
+duolecaiSwitch=1
+
+#七星彩运营开关 0关  1开
+qixingcaiSwitch=1
+#追号开关0关 1开
+addNumberSwitch=1
+#11选5特别追号开关
+duolecaiTBZHSwitch =0
+########################################################################################################
+#新闻资讯的存储XML路径 newsDates_file_type为 true时  使用配置文件的属性 
+newsDates_file_type=false
+newsDatas_file=/home/appusr/WapNews/newsDatas.xml
+newsDatas_file1=/home/appusr/WapNews/company_list.xml
+#新闻列表页每页显示的记录数量
+lineNumberToNewsLine=20
+#wap首页新闻部分显示从第几页开始显示
+startLineToIndex=0
+#每页显示几条
+lineNumberToIndex=5
+
+#wap首页新闻头条显示个数
+touTiaoSize=2
+#wap所有页面的当前位置的分隔符
+to_wap_top_char="-"
+
+#wap中随即出现祝福激励的语言
+LuckSentence0="人生在世，必中大奖！"
+LuckSentence1="强！买的不是彩票，是寂寞！"
+LuckSentence2="常买彩票，有益身心健康！"
+LuckSentence3="祝君好运！"
+LuckSentence4="棒极了，加油！"
+LuckSentence5="投注是自然付出，大奖是必然结果！"
+LuckSentence6="时时如意彩，天天好运来"
+LuckSentence7="如意彩，祝您好运连连！"
+LuckSentence8="如意彩，祝您薪饷四成！"
+LuckSentence9="如意彩，愿您财源滚滚来！"
+LuckSentence10="恭喜发财，彩中有财！"
+LuckSentence11="加油，大奖就在前方！"
+LuckSentence12="买彩票，只要功夫深，铁杵磨成针！"
+LuckSentence13="买彩票，锲而不舍，金石可镂！"
+
+#wap的头部输出 目前只针对购彩大厅
+to_wap_top_hall="购彩大厅"
+
+#统计访问wap网站的的用户数量 CounterServiceXml_file_type为 true时  使用配置文件的属性 
+CounterServiceXml_file_type=false
+CounterServiceXml_file=E:/javawork/jrtWAPSite1.0B/WebRoot/WEB-INF/classes/counterService.xml
+
+#统计访问wap网站的的用户数量 CounterServiceXml_file_type为 true时  使用配置文件的属性 
+CounterUserXml_file_type=false
+CounterUserXml_file=E:/javawork/jrtWAPSite1.0B/WebRoot/WEB-INF/classes/counterUser.xml
+#统计访问wap网站的的注册用户的电话号码 CounterPhoneXml_file_type为 true时  使用配置文件的属性 
+CounterPhoneXml_file_type=false
+CounterPhoneXml_file=E:/javawork/jrtWAPSite1.0B/WebRoot/WEB-INF/classes/counterPhone.xml
+#统计访问wap网站的网站回跳白名单 CounterHttpXml_file_type为 true时  使用配置文件的属性 
+CounterHttpXml_file_type=false
+CounterHttpXml_file=E:/javawork/jrtWAPSite1.0B/WebRoot/WEB-INF/classes/counterPhone.xml
+#友情链接存储文件的地址是否使用配置文件 CounterHttpXml_file_type为 true时  使用配置文件的属性 
+FriendlyLinkXml_file_type=false
+FriendlyLinkXml_file=E:/javawork/jrtWAPSite1.0B/WebRoot/WEB-INF/classes/friendlyUrl.xml
+#监控用户访问路径 的配置属性 sessionUrlCount_file_type为 true时  使用配置文件的属性 
+sessionUrlCount_file_type=true
+sessionUrlCount_file=/home/appusr/WapNews/sUrl/
+shuyuCount_file=/home/appusr/WapNews/
+
+
+###########################
+#########推荐好友##########
+###########################
+#发送短信开关1为开0为关
+remdKaiguan=0
+#推荐好友发送短信内容
+#remdcontent=推荐你试试手机买彩票：http://wap.ruyicai.com/
+remdcontent=\u63A8\u8350\u4F60\u8BD5\u8BD5\u624B\u673A\u4E70\u5F69\u7968http\://wap.51500.cn/
+#remdcontent=\u63A8\u8350\u4F60\u8BD5\u8BD5\u624B\u673A\u4E70\u5F69\u7968http\://192.168.1.109:8888/jrtWAPSite1.0/
+#被推荐人注册送彩金的开关 1为开0为关
+registerSW=1
+#注册送彩金1元以分为单位
+registerMoney = 100
+#给推荐人送彩金1元以分为单位
+recommendMoeny = 100
+#送完彩金后给推荐人充值发送短信内容
+charegeSMS=\u60A8\u63A8\u8350\u7684\u597D\u53CBname\u5DF2\u5145\u503C\uFF0C1\u5143\u5F69\u91D1\u5DF2\u6253\u5165\u60A8\u8D26\u6237\u3002\u5982\u610F\u5F69\u795D\u60A8\u5C0F\u5956\u8FDE\u8FDE\uFF0C\u5927\u5956\u4E0D\u65AD\uFF01
+
+#图铃推广参数集合
+
+#获取图铃的开始页
+TULING_STARTPAGE = 1
+#获取图铃的结尾页  
+TULING_ENDPAGE = 10
+#投注成功送图铃,ON为开启
+BETSUCCESS_IMAGE = OFF
+#首页显示图铃,ON为开启
+TULINGINDEX = OFF
+#充值页面显示图铃,ON为开启
+CHARGE_TULING = OFF
+#图铃访问超时时间
+ConnectTimeout = 3000
+ReadTimeout = 3000
+
+#节日赠送
+#节日增彩开关  ON 为开  OFF 为关
+openJieRi =ON
+#赠彩首页显示，如果为节日，请添加赠送二字
+JieRi=送礼送彩票
+#staticUrl=http://192.168.0.118:8000/s
+staticUrl = http://219.148.162.68/s
+########################如意彩RSS xml存放地址##################################
+rssFilePath=/home/appusr/rss/
+###############################################################################
+

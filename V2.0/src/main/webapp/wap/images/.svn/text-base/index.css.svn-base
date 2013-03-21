@@ -1,0 +1,167 @@
+@charset "utf-8";
+/* CSS Document */
+html,body,div,span,applet,object,iframe,caption,tbody,tfoot,thead,th,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,dl,dt,dd,ol,ul,li,fieldset,form,label,legend
+	{
+	vertical-align: baseline;
+	font-family: inherit;
+	font-weight: inherit;
+	font-style: inherit;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+.btnbg { border:#f47602 solid 1px; color:#fff; cursor:pointer; border-radius:3px; box-shadow:0px 0px 1px #fff inset; background-color: #FF7F00;}
+form {
+	margin: 0px;
+	padding: 0px;
+	display: inline;
+}
+
+ol,ul,li {
+	list-style: none;
+}
+
+.clear {
+	content: ".";
+	display: block;
+	height: 0px;
+	line-height: 0px;
+	visibility: hidden;
+	clear: both
+}
+
+body {
+	font-family: "宋体";
+	font-size: 16px;
+}
+
+a {
+	text-decoration: none;
+	color: #003399
+}
+
+a:active {
+	text-decoration: underline;
+	color: #c00
+}
+
+.top {
+	height: 11px;
+	width: 100%;
+	background: url(repeatx.png) repeat-x 0 0;
+	padding: 5px 0 0 4px
+}
+
+.top_mb2 {
+	width: 100%;
+	background: #f1f1f1
+}
+
+.top img {
+	display: block
+}
+
+.logo_box {
+	height: 48px;
+	width: 100%;
+	background: url(repeatx.png) repeat-x 0 -300px
+}
+
+.logo {
+	float: left;
+	margin-left: 10px;
+	margin-top: 10px;
+	display: inline
+}
+
+.login {
+	float: right;
+	padding-top: 12px;
+	padding-right: 10px
+}
+
+.login a {
+	font-size: 12px;
+	color: #FFF;
+	background: url(btn_bg.png) no-repeat;
+	width: 49px;
+	height: 23px;
+	display: block;
+	text-align: center;
+	line-height: 23px;
+	float: right;
+	margin-left: 10px
+}
+
+.menu {
+	width: 100%;
+	font-size: 18px;
+	line-height: 30px;
+	border-bottom: 1px solid #cc9999;
+	overflow: hidden;
+	background:#cc0000;
+	size:50px;
+	color:#ff4957;
+	display: block;
+}
+.menu a {
+	font-weight: bold;
+	color: #FFC
+}
+
+.hotnews {
+	line-height: 180%;
+	border-bottom: 1px solid #cc9999;
+	background: #fff1f1;
+	padding: 4px 0 4px 0
+}
+
+.hotnews a {
+	color: #C00
+}
+
+.quike_slect {
+	background: #f4f4f4;
+	border-bottom: 1px solid #ccc;
+	padding: 5px 10px
+}
+
+.contant {
+	line-height: 180%
+}
+.charge{
+	font-weight: bold;
+	background: #e7e7e7;
+	line-height: 25px;
+	color: #000;
+	padding-left: 10px;
+}
+
+h1 {
+	font-size: 18px;
+	font-weight: bold;
+	background: #cc0000;
+	line-height: 20px;
+	color: #FFC;
+	padding-left: 10px;
+	border-top: 1px solid #900;
+	border-bottom: 1px solid #900
+}
+
+h1 a {
+	color: #FFC;
+}
+
+.zucai_tr {
+	background: #e3f2fe;
+}
+
+.zucai_tr1 {
+	background: #FeF4F4;
+}
+.jc_15 {
+	height: 15px
+}
