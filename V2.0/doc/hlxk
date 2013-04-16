@@ -1,6 +1,0 @@
-获取验证码接口
-http://wap.ruyicai.com/w/sendcode.do?method=vnetcode
-提供的返回url
-http://wap.ruyicai.com/w/buser.do?method=vnetForEncrypt&cn=521
-提供的新闻接口
-http://wap.ruyicai.com/interfaces/hlxk_news.jspx
