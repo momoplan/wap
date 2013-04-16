@@ -1,0 +1,15 @@
+####################################
+## Staging Environment jdbc.properties
+# Database Connectivity Properties
+####################################
+
+db.url=jdbc:mysql://192.168.99.120:3306/client?useUnicode=true&characterEncoding=UTF-8
+db.password =jrtConsole
+db.username =jrtConsole
+db.driver=com.mysql.jdbc.Driver
+
+
+non.db.driver=com.mysql.jdbc.Driver
+non.db.url=jdbc:mysql://192.168.99.120/sms?characterEncoding=utf-8
+non.db.username=jrtConsole
+non.db.password=jrtConsole

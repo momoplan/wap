@@ -1,0 +1,69 @@
+<%@ page pageEncoding="UTF-8"%>
+<%@ page import="com.ruyicai.wap.util.CommonUtil"%>
+<%@ page import="java.util.*" %>
+<%
+	String path = CommonUtil.removeTrailingSlash(request.getContextPath());
+	ResourceBundle rbint = ResourceBundle.getBundle("jrtWAPSite");
+	List<String> list = CommonUtil.getBetCode("T01010","5");
+    String deadline = "";
+    String zhuma = (String)request.getAttribute("zhuma")==null?"":(String)request.getAttribute("zhuma");
+    String beishu ="";
+    beishu = (String)request.getAttribute("beishu");
+    if(beishu ==null) beishu="1";
+    String addNumber = "";
+    if (rbint.getString("addNumberSwitch").equals("1")) {
+		addNumber = (String)request.getAttribute("addNumber");
+		if (addNumber==null) addNumber="1";
+	}
+    String twoDS ="";
+    twoDS = (String)request.getAttribute("twoDS");
+    if(twoDS ==null) twoDS="5";
+    String err_msg = (String)request.getAttribute("err_msg");
+%>
+	<title>江西11选5前三组选</title>
+<body>
+<a href="/wap/wapindex.jspx">首页</a>-<a href="<%=response.encodeURL(path+"/wap/buyLottery.jspx")%>"><%
+			out.print(CommonUtil.printHall());
+		%></a><%
+			out.print(CommonUtil.printChar());
+		%>江西11选5<br/>
+		<a href="/w/wap/11select5/optionOne.jspx">任选</a>|<a 
+		   href="/w/wap/11select5/ForwardTwoZX.jspx">直选</a>|组选|<a 
+		   href="/w/wap/11select5/dantuoselection.jspx?type=2">胆拖</a><br/>
+		<a href="/wap/11select5/ForwardTwoGroup.jspx">前二组选</a>|前三组选<br/>
+		
+		<%
+			deadline = CommonUtil.getDeadline("T01010", 0);
+			if (deadline == null)
+			deadline = "";
+		%> <%
+ 			if (deadline != null) {
+ 		%> <%
+ 			out.print(deadline);
+ 		%> <%}%>
+ 		<form action="/wap/11select5/ForwardThreeGroup.jspx" method="post">
+ 		<input type="submit" value="刷新" />
+ 		</form><br /><a style="color: red">
+		 <% if(err_msg!=null){
+			out.print(CommonUtil.printWarningMessage(err_msg)+"<br/>");
+		   }
+		%></a>
+ 		01-11选3-9个数字,号码间无分隔,数字不可重复,小于10则补0,如选择2则填写02<br/>
+ 		自选<br/>
+ 		<form action="/11select5/zThreeByHand.jspx" method="post">
+ 		注码：<input name="zhuma" type="text" emptyok="true"  size="18" maxlength="18" format="*N" tabindex="1" value="<%=zhuma %>" /><br/>
+ 		倍数：<input name="beishu" type="text" emptyok="true"  size="2" maxlength="2" format="*N" tabindex="1" value="<%=beishu %>" />倍(最多99倍)<br/>
+ 		追号：<input name="addNumber" type="text" emptyok="true"  size="2" maxlength="2" format="*N" tabindex="1" value="<%=addNumber %>" />期(最多99期,追1期即买当前期)<br/>
+ 		<input type="submit" value="提交投注" />
+ 		</form><br/>
+		前三组选:与开奖号码的前三位一致（不限顺序）即中195元!<br/>	
+		【最新开奖】<br/>	
+		<%
+			String code = "";
+			for (int i = 0; i < list.size(); i++) {
+			code = list.get(i);
+		%> <%
+ 			out.print(code);
+ 		%> <br />	
+		<%}%><br />	
+</body>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<decorators defaultdir="/WEB-INF/jsp/sitemesh">
+
+    <excludes>  
+      <pattern>/wap/t/crossmo/wapindex.jsp*</pattern> 
+      <pattern>/wap/t/uc_wapindex.jsp*</pattern> 
+      <pattern>/interfaces/hlxk_news.jsp*</pattern>
+      <pattern>/sendcode.do*</pattern>
+    </excludes> 
+    
+	<decorator name="handpay" page="handpay.jsp">
+		<pattern>/handpay/*</pattern>
+		<pattern>/lottery/*</pattern>
+	</decorator>
+	
+	<decorator name="site" page="nonSitemesh.jsp">
+		<pattern>*.jsp</pattern>
+		<pattern>*.do</pattern>
+		<pattern>*.jspx*</pattern>
+		<pattern>*.jspa*</pattern>
+		<pattern>*betDetail.jspa*</pattern>
+	</decorator>
+	
+	<decorator name="pages" page="homeSitemesh.jsp">
+		<pattern>*wapindex.jsp*</pattern>
+		<pattern>*userWap.do*</pattern>
+		<pattern>*buser.do*</pattern>
+		<pattern>/</pattern> 
+	</decorator>
+
+</decorators>

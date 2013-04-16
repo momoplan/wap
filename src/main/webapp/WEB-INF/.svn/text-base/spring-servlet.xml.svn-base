@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+	http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd	
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd ">
+
+	<mvc:annotation-driven />
+
+	<context:component-scan base-package="com.ruyicai.wap.controller" />
+	<mvc:view-controller path="/wap/tingshou.jspx"/>
+	<!-- 首页 -->
+	<mvc:view-controller path="/wap/wapindex.jspx"/>
+	<!-- 登录 -->
+	<mvc:view-controller path="/wap/userinfo/login.jspx"/>
+	<!-- 互联星空登录 -->
+	<mvc:view-controller path="/wap/userinfo/loginErrorHLXK.jspx"/>
+	<mvc:view-controller path="/interfaces/hlxk_news.jspx"/>
+	<mvc:view-controller path="/wap/news/newsShare.jspx"/>
+	<!-- 忘记密码-->
+	<mvc:view-controller path="/wap/userinfo/getPassword.jspx"/>
+	<!-- 走势图 -->
+	<mvc:view-controller path="/wap/trendChart/trendChart.jspx"/>
+	<mvc:view-controller path="/wap/trendChart/trendChartDetail.jspx"/>
+	<mvc:view-controller path="/wap/trendChart/trendChartSSQ.jspx"/>
+	<mvc:view-controller path="/wap/trendChart/trendChartDLT.jspx"/>
+	<mvc:view-controller path="/wap/trendChart/trendChartQLC.jspx"/>
+	<mvc:view-controller path="/wap/trendChart/trendChart22X5.jspx"/>
+	<mvc:view-controller path="/wap/trendChart/trendChartQXC.jspx"/>
+	<mvc:view-controller path="/wap/trendChart/trendChart3D.jspx"/>
+	<mvc:view-controller path="/wap/trendChart/trendChartPLS.jspx"/>
+	<mvc:view-controller path="/wap/trendChart/trendChartPLW.jspx"/>
+	<mvc:view-controller path="/wap/trendChart/trendChartKL10.jspx"/>
+	
+	<mvc:view-controller path="/wap/trendChart/trendChart11YDJDetail.jspx"/>
+	<mvc:view-controller path="/wap/trendChart/trendChart22X5Detail.jspx"/>
+	<mvc:view-controller path="/wap/trendChart/trendChart3DDetail.jspx"/>
+	<mvc:view-controller path="/wap/trendChart/trendChartDLCDetail.jspx"/>
+	<mvc:view-controller path="/wap/trendChart/trendChartDLTDetail.jspx"/>
+	<mvc:view-controller path="/wap/trendChart/trendChartPLSDetail.jspx"/>
+	<mvc:view-controller path="/wap/trendChart/trendChartPLWDetail.jspx"/>
+	<mvc:view-controller path="/wap/trendChart/trendChartQLCDetail.jspx"/>
+	<mvc:view-controller path="/wap/trendChart/trendChartQXCDetail.jspx"/>
+	<mvc:view-controller path="/wap/trendChart/trendChartSSQDetail.jspx"/>
+	<!-- 遗漏 -->
+	<mvc:view-controller path="/wap/leaveOut/leaveOut.jspx"/>
+	<mvc:view-controller path="/wap/leaveOut/leaveOutSSC.jspx"/>
+	<mvc:view-controller path="/wap/leaveOut/leaveOutDJ.jspx"/>
+	<mvc:view-controller path="/wap/leaveOut/leaveOutDLC.jspx"/>
+	<!-- 注册 -->
+	<mvc:view-controller path="/wap/userinfo/register.jspx"/>
+	<!-- 用户协议 -->
+	<mvc:view-controller path="/wap/userinfo/itemShow.jspx"/>
+	<!-- 短信 -->
+	<mvc:view-controller path="/wap/news/newsExpertsSms.jspx"/>
+	<mvc:view-controller path="/wap/news/newSmsDetail.jspx"/>
+	<!-- 充值 -->
+		<!-- 首页 -->
+	<mvc:view-controller path="/wap/charge/chargeIndex.jspx"/>
+		<!-- 支付宝充值 -->
+	<mvc:view-controller path="/wap/charge/chargeByZFB.jspx"/>
+	<mvc:view-controller path="/wap/charge/chargeByZFBKJ.jspx"/>
+		<!-- 手机卡充值首页 -->
+	<mvc:view-controller path="/wap/charge/chargeByPointMoveIndex.jspx"/>
+		<!-- 电信卡充值首页 -->
+	<mvc:view-controller path="/wap/charge/chargeByPointMoveDXEpayTofaceValue.jspx"/>
+		<!-- 电信卡充值 -->
+	<mvc:view-controller path="/wap/charge/chargeIndexByFaceValueByDX.jspx"/>
+		<!-- 移动卡充值首页 -->
+	<mvc:view-controller path="/wap/charge/chargeByPointMoveEpayTofaceValue.jspx"/>
+		<!-- 移动卡充值 -->
+	<mvc:view-controller path="/wap/charge/chargeIndexByFaceValueByYD.jspx"/>
+		<!-- 银行转账 -->
+	<mvc:view-controller path="/wap/charge/chargeBankTransfer.jspx"/>
+	<!--  -->
+	<mvc:view-controller path="/wap/iphoneCharge.jspx"/>
+		<!-- 联通卡充值首页 -->
+	<mvc:view-controller path="/wap/charge/chargeByPointMoveLTEpayTofaceValue.jspx"/>
+		<!-- 联通卡充值 -->
+	<mvc:view-controller path="/wap/charge/chargeIndexByFaceValueByLT.jspx"/>
+	<!-- 为互联星空提供新闻 -->
+	<mvc:view-controller path="/interfaces/hlxk_news.jsp"/>
+	<!-- 合买 -->
+	<mvc:view-controller path="/wap/buyHMLottery.jspx"/>
+	<!-- 下载 -->
+	<mvc:view-controller path="/client/download.jspx"/>
+	<mvc:view-controller path="/client/360.jspx"/>
+	<!-- 用户中心 -->
+	<mvc:view-controller path="/wap/userinfo/userCenter.jspx"/>
+		<!-- 设置首页 -->
+	<mvc:view-controller path="/wap/userinfo/messageSetting.jspx"/>
+		<!-- 购彩相关服务提醒设置 -->
+	<mvc:view-controller path="/wap/userinfo/buyLotterySetting.jspx"/>
+	<!-- 留言 -->
+	<mvc:view-controller path="/wap/userinfo/feedBack.jspx"/>
+	<!--赠送 -->
+		<!--首页 -->
+	<mvc:view-controller path="/wap/suixinsong/suixinsongIndex.jspx"/>
+		<!--随机赠送 -->
+	<mvc:view-controller path="/wap/suixinsong/doubleBallGift.jspx"/>
+		<!--双色球 -->
+	<mvc:view-controller path="/wap/suixinsong/suijizengsong.jspx"/>
+		<!--福彩3D -->
+	<mvc:view-controller path="/wap/suixinsong/3DGift.jspx"/>
+		<!--七乐彩-->
+	<mvc:view-controller path="/wap/suixinsong/qilecaiGift.jspx"/>
+		<!--排列三-->
+	<mvc:view-controller path="/wap/suixinsong/array3Gift.jspx"/>
+		<!--大乐透-->
+	<mvc:view-controller path="/wap/suixinsong/daletouGift.jspx"/>
+		<!--查询首页-->
+	<mvc:view-controller path="/wap/query/selectGift.jspx"/>
+		<!--赠送查询-->
+	<mvc:view-controller path="/wap/query/selectSenderPresentDetails.jspx"/>
+	<!-- 彩种 -->
+	<!-- 购彩大厅 -->
+	<mvc:view-controller path="/wap/buyLottery.jspx"/>
+	<!-- 竞彩篮球 -->
+		<!-- 首页 -->
+	<mvc:view-controller path="/wap/jc/jclqIndex.jspx"/>
+	<mvc:view-controller path="/wap/jc/jczqIndex.jspx"/>
+	<!-- 十一运夺金 -->
+		<!-- 首页 -->
+	<mvc:view-controller path="/wap/ElevenDuoJin/index.jspx"/>
+		<!-- 追号玩法介绍 -->
+	<mvc:view-controller path="/wap/ElevenDuoJin/addnumberIntroduction.jspx"/>
+		<!-- 玩法介绍 -->
+	<mvc:view-controller path="/wap/ElevenDuoJin/introduction.jspx"/>
+		<!-- 任选一 -->
+	<mvc:view-controller path="/wap/ElevenDuoJin/optionOne.jspx"/>
+	<mvc:view-controller path="/wap/ElevenDuoJin/optionOneAutoDS.jspx"/>
+	<mvc:view-controller path="/wap/ElevenDuoJin/optionOneAutoFS.jspx"/>
+		<!-- 任选二 -->
+	<mvc:view-controller path="/wap/ElevenDuoJin/optionTwo.jspx"/>
+	<mvc:view-controller path="/wap/ElevenDuoJin/optionTwoAutoDS.jspx"/>
+	<mvc:view-controller path="/wap/ElevenDuoJin/optionTwoAutoFS.jspx"/>
+		<!-- 任选三 -->
+	<mvc:view-controller path="/wap/ElevenDuoJin/optionThreeAutoDS.jspx"/>
+	<mvc:view-controller path="/wap/ElevenDuoJin/optionThreeAutoFS.jspx"/>
+	<mvc:view-controller path="/wap/ElevenDuoJin/optionThree.jspx"/>
+		<!-- 任选四 -->
+	<mvc:view-controller path="/wap/ElevenDuoJin/optionFour.jspx"/>
+	<mvc:view-controller path="/wap/ElevenDuoJin/optionFourAutoDS.jspx"/>
+	<mvc:view-controller path="/wap/ElevenDuoJin/optionFourAutoFS.jspx"/>
+		<!-- 任选五 -->
+	<mvc:view-controller path="/wap/ElevenDuoJin/optionFive.jspx"/>
+	<mvc:view-controller path="/wap/ElevenDuoJin/optionFiveAutoDS.jspx"/>
+	<mvc:view-controller path="/wap/ElevenDuoJin/optionFiveAutoFS.jspx"/>
+		<!-- 任选六 -->
+	<mvc:view-controller path="/wap/ElevenDuoJin/optionSix.jspx"/>
+	<mvc:view-controller path="/wap/ElevenDuoJin/optionSixAutoDS.jspx"/>
+	<mvc:view-controller path="/wap/ElevenDuoJin/optionSixAutoFS.jspx"/>
+		<!-- 任选七 -->
+	<mvc:view-controller path="/wap/ElevenDuoJin/optionSeven.jspx"/>
+	<mvc:view-controller path="/wap/ElevenDuoJin/optionSevenAutoDS.jspx"/>
+	<mvc:view-controller path="/wap/ElevenDuoJin/optionSevenAutoFS.jspx"/>
+		<!-- 任选八 -->
+	<mvc:view-controller path="/wap/ElevenDuoJin/optionEight.jspx"/>
+	<mvc:view-controller path="/wap/ElevenDuoJin/optionEightAutoDS.jspx"/>
+		<!-- 选前二 -->
+		<!-- 直选单式 -->
+	<mvc:view-controller path="/wap/ElevenDuoJin/ForwardTwoZX.jspx"/>
+		<!-- 直选复式 -->
+	<mvc:view-controller path="/wap/ElevenDuoJin/ForwardTwoZXFS.jspx"/>
+		<!-- 直选定位复式 -->
+	<mvc:view-controller path="/wap/ElevenDuoJin/DWTwoZXFS.jspx"/>
+		<!-- 组选 -->
+	<mvc:view-controller path="/wap/ElevenDuoJin/ForwardTwoGroup.jspx"/>
+	<mvc:view-controller path="/wap/ElevenDuoJin/ForwardTwoGroupAutoDS.jspx"/>
+	<mvc:view-controller path="/wap/ElevenDuoJin/ForwardTwoGroupAutoFS.jspx"/>
+		<!-- 选前三 -->
+		<!-- 直选单式 -->
+	<mvc:view-controller path="/wap/ElevenDuoJin/ForwardThreeZX.jspx"/>
+		<!-- 直选复式 -->
+	<mvc:view-controller path="/wap/ElevenDuoJin/ForwardThreeZXFS.jspx"/>
+		<!-- 直选定位复式 -->
+	<mvc:view-controller path="/wap/ElevenDuoJin/DWThreeZXFS.jspx"/>
+		<!-- 组选 -->
+	<mvc:view-controller path="//wap/ElevenDuoJin/ForwardThreeGroup.jspx"/>
+	<mvc:view-controller path="//wap/ElevenDuoJin/ForwardThreeGroupAutoDS.jspx"/>
+	<mvc:view-controller path="//wap/ElevenDuoJin/ForwardThreeGroupAutoFS.jspx"/>
+		<!-- 胆拖 -->
+	<mvc:view-controller path="/wap/ElevenDuoJin/dantuointroduction.jspx"/>
+		<!-- 胆拖必读 -->
+	<mvc:view-controller path="/wap/ElevenDuoJin/dantuointroduction.jspx"/>
+		<!-- 胆拖二 -->
+	<mvc:view-controller path="/wap/ElevenDuoJin/dantuoR2.jspx"/>
+		<!-- 胆拖三 -->
+	<mvc:view-controller path="/wap/ElevenDuoJin/dantuoR3.jspx"/>
+		<!-- 胆拖四 -->
+	<mvc:view-controller path="/wap/ElevenDuoJin/dantuoR4.jspx"/>
+		<!-- 胆拖五 -->
+	<mvc:view-controller path="/wap/ElevenDuoJin/dantuoR5.jspx"/>
+		<!-- 胆拖六 -->
+	<mvc:view-controller path="/wap/ElevenDuoJin/dantuoR6.jspx"/>
+		<!-- 胆拖七 -->
+	<mvc:view-controller path="/wap/ElevenDuoJin/dantuoR7.jspx"/>
+		<!-- 胆拖前二组选 -->
+	<mvc:view-controller path="/wap/ElevenDuoJin/dantuoGroup2.jspx"/>
+		<!-- 胆拖前三组选 -->
+	<mvc:view-controller path="/wap/ElevenDuoJin/dantuoGroup3.jspx"/>
+		
+	<!-- 江西11选5 -->
+		<!-- 首页 -->
+	<mvc:view-controller path="/wap/11select5/11select5Index.jspx"/>
+		<!-- 介绍 -->
+	<mvc:view-controller path="/wap/11select5/11select5Intr.jspx"/>
+		<!-- 任选二 -->
+	<mvc:view-controller path="/wap/11select5/optionTwo.jspx"/>
+	<mvc:view-controller path="/wap/11select5/optionTwoAutoDS.jspx"/>
+	<mvc:view-controller path="/wap/11select5/optionTwoAutoFS.jspx"/>
+		<!-- 任选三 -->
+	<mvc:view-controller path="/wap/11select5/optionThree.jspx"/>
+	<mvc:view-controller path="/wap/11select5/optionThreeAutoDS.jspx"/>
+	<mvc:view-controller path="/wap/11select5/optionThreeAutoFS.jspx"/>
+		<!-- 任选一 -->
+	<mvc:view-controller path="/wap/11select5/optionOne.jspx"/>
+	<mvc:view-controller path="/wap/11select5/optionOneAutoDS.jspx"/>
+	<mvc:view-controller path="/wap/11select5/optionOneAutoFS.jspx"/>
+		<!-- 任选五 -->
+	<mvc:view-controller path="/wap/11select5/optionFive.jspx"/>
+	<mvc:view-controller path="/wap/11select5/optionFiveAutoDS.jspx"/>
+	<mvc:view-controller path="/wap/11select5/optionFiveAutoFS.jspx"/>
+		<!-- 任选四 -->
+	<mvc:view-controller path="/wap/11select5/optionFour.jspx"/>
+	<mvc:view-controller path="/wap/11select5/optionFourAutoDS.jspx"/>
+	<mvc:view-controller path="/wap/11select5/optionFourAutoFS.jspx"/>
+		<!-- 任选六 -->
+	<mvc:view-controller path="/wap/11select5/optionSix.jspx"/>
+	<mvc:view-controller path="/wap/11select5/optionSixAutoDS.jspx"/>
+	<mvc:view-controller path="/wap/11select5/optionSixAutoFS.jspx"/>
+		<!-- 任选七 -->
+	<mvc:view-controller path="/wap/11select5/optionSeven.jspx"/>
+	<mvc:view-controller path="/wap/11select5/optionSevenAutoDS.jspx"/>
+	<mvc:view-controller path="/wap/11select5/optionSevenAutoFS.jspx"/>
+		<!-- 任选八 -->
+	<mvc:view-controller path="/wap/11select5/optionEight.jspx"/>
+	<mvc:view-controller path="/wap/11select5/optionEightAutoDS.jspx"/>
+		<!-- 选前二 -->
+		<!-- 直选 -->
+	<mvc:view-controller path="/wap/11select5/ForwardTwoZX.jspx"/>
+		<!-- 组选-->
+	<mvc:view-controller path="/wap/11select5/ForwardTwoGroup.jspx"/>
+		<!-- 选前三 -->
+		<!-- 直选 -->
+	<mvc:view-controller path="/wap/11select5/ForwardThreeZX.jspx"/>
+		<!-- 组选 -->
+	<mvc:view-controller path="/wap/11select5/ForwardThreeGroup.jspx"/>
+		<!-- 胆拖 -->
+		<!-- 胆拖必读 -->
+	<mvc:view-controller path="/wap/11select5/dantuohelp.jspx"/>
+		<!-- 胆拖 -->
+	<mvc:view-controller path="/wap/11select5/dantuoselection.jspx"/>
+	
+	<!-- 重庆时时彩 -->
+		<!-- 首页 -->
+	<mvc:view-controller path="/wap/cqshishicai/sscIndex.jspx"/>
+		<!-- 一星 -->
+	<mvc:view-controller path="/wap/cqshishicai/sscOneStar.jspx"/>
+	<mvc:view-controller path="/wap/cqshishicai/sscOneStarAuto.jspx"/>
+		<!-- 二星 -->
+	<mvc:view-controller path="/wap/cqshishicai/sscTowStar.jspx"/>
+	<mvc:view-controller path="/wap/cqshishicai/sscTowStarAuto.jspx"/>
+		<!-- 大小单双 -->
+	<mvc:view-controller path="/wap/cqshishicai/xddsFiveStar.jspx"/>
+		<!-- 三星 -->
+	<mvc:view-controller path="/wap/cqshishicai/sscThreeStar.jspx"/>
+	<mvc:view-controller path="/wap/cqshishicai/sscThreeStarAuto.jspx"/>
+		<!-- 五星 -->
+	<mvc:view-controller path="/wap/cqshishicai/sscFiveStar.jspx"/>
+	<mvc:view-controller path="/wap/cqshishicai/sscFiveStarAuto.jspx"/>
+		<!-- 二星组选 -->
+	<mvc:view-controller path="/wap/cqshishicai/sgTowStar.jspx"/>
+		<!-- 二星和值 -->
+	<mvc:view-controller path="/wap/cqshishicai/hezhiTowStar.jspx"/>
+		<!-- 五星通选 -->
+	<mvc:view-controller path="/wap/cqshishicai/GeneralFiveStar.jspx"/>
+	
+	<!-- 双色球 -->
+		<!-- 首页 -->
+	<mvc:view-controller path="/wap/DoubleBall/DoubleBallIndex.jspx"/>
+		<!-- 修改 -->
+	<mvc:view-controller path="/wap/DoubleBall/ModifySingleAutoSelection.jspx"/>
+		<!-- 单式机选 -->
+	<mvc:view-controller path="/wap/DoubleBall/SingleAutoSelection.jspx"/>
+		<!-- 单式自选 -->
+	<mvc:view-controller path="/wap/DoubleBall/SingleSelfSelection.jspx"/>
+		<!-- 复式机选 -->
+	<mvc:view-controller path="/wap/DoubleBall/MultipleAutoSelection.jspx"/>
+		<!-- 复式自选-->
+	<mvc:view-controller path="/wap/DoubleBall/MultipleSelfSelection.jspx"/>
+		<!-- 胆拖机选-->
+	<mvc:view-controller path="/wap/DoubleBall/DantuoAutoSelection.jspx"/>
+		<!-- 胆拖自选 -->
+	<mvc:view-controller path="/wap/DoubleBall/DantuoSelfSelection.jspx"/>
+		<!-- 定胆机选-->
+	<mvc:view-controller path="/wap/DoubleBall/DantuoDingdanSelection.jspx"/>
+	
+	<!--福彩3D -->
+		<!-- 首页 -->
+	<mvc:view-controller path="/wap/3D/3Dindex.jspx"/>
+		<!-- 直选投注 -->
+	<mvc:view-controller path="/wap/3D/3DDirectSingle.jspx"/>
+		<!-- 直选和值 -->
+	<mvc:view-controller path="/wap/3D/3DDirectSelectionHeZhi.jspx"/>
+		<!-- 组三复式 -->
+	<mvc:view-controller path="/wap/3D/3DGroup3Multiple.jspx"/>
+		<!-- 组六复式 -->
+	<mvc:view-controller path="/wap/3D/3DGroup6Multiple.jspx"/>
+		<!-- 组三和值 -->
+	<mvc:view-controller path="/wap/3D/3DGroup3HeZhi.jspx"/>
+		<!-- 组六和值 -->
+	<mvc:view-controller path="/wap/3D/3DGroup6HeZhi.jspx"/>
+		<!-- 组三单式 -->
+	<mvc:view-controller path="/wap/3D/3DGroup3Single.jspx"/>
+		<!-- 组六单式 -->
+	<mvc:view-controller path="/wap/3D/3DGroup6Single.jspx"/>
+		<!-- 胆拖复式 -->
+	<mvc:view-controller path="/wap/3D/3DDantuoMultiple.jspx"/>
+		<!-- 直选包号 -->
+	<mvc:view-controller path="/wap/3D/3DSingleSelectSingleMultiple.jspx"/>
+		<!-- 修改 -->
+	<mvc:view-controller path="/wap/3D/3DmodifyAutoSelection.jspx"/>
+	
+	
+	<!-- 大乐透 -->
+		<!-- 首页 -->
+	<mvc:view-controller path="/wap/daletou/DaletouIndex.jspx"/>
+		<!-- 修改-->
+	<mvc:view-controller path="/wap/daletou/ModifySingleAutoSelection.jspx"/>
+	<mvc:view-controller path="/wap/daletou/ModifyMultipleAutoSelection.jspx"/>
+		<!-- 单式 -->
+	<mvc:view-controller path="/wap/daletou/SingleAutoSelection.jspx"/>
+		<!-- 复式 -->
+	<mvc:view-controller path="/wap/daletou/SingleSelfSelection.jspx"/>
+		<!-- 12选2 -->
+	<mvc:view-controller path="/wap/daletou/ShengXiaoSelection.jspx"/>
+		<!-- 复式机选 -->
+	<mvc:view-controller path="/wap/daletou/MultipleAutoSelection.jspx"/>
+		<!-- 胆拖自选 -->
+	<mvc:view-controller path="/wap/daletou/DantuoSelfSelection.jspx"/>
+	<!-- 胆拖自选 -->
+	<mvc:view-controller path="/wap/daletou/DantuoSelfSelection.jspx"/>
+	
+	<!-- 七乐彩 -->
+		<!-- 首页 -->
+	<mvc:view-controller path="/wap/qilecai/QilecaiIndex.jspx"/>
+		<!-- 机选 -->
+	<mvc:view-controller path="/wap/qilecai/SingleAutoSelection.jspx"/>
+		<!-- 自选 -->
+	<mvc:view-controller path="/wap/qilecai/SingleSelfSelection.jspx"/>
+		<!-- 胆拖 -->
+	<mvc:view-controller path="/wap/qilecai/DantuoSelfSelection.jspx"/>
+		<!-- 复式机选 -->
+	<mvc:view-controller path="/wap/qilecai/MultipleAutoSelection.jspx"/>
+		<!-- 复式自选 -->
+	<mvc:view-controller path="/wap/qilecai/MultipleSelfSelection.jspx"/>
+		<!-- 定胆机选 -->
+	<mvc:view-controller path="/wap/qilecai/DingDanAutoSelection.jspx"/>
+	
+	<!-- 排列三 -->
+		<!-- 首页 -->
+	<mvc:view-controller path="/wap/array3/ArrayIndex.jspx"/>
+		<!-- 直选复式-->
+	<mvc:view-controller path="/wap/array3/Array3DirectSingle.jspx"/>
+		<!-- 组三包号 -->
+	<mvc:view-controller path="/wap/array3/Array3Group3BH.jspx"/>
+		<!-- 组六包号-->
+	<mvc:view-controller path="/wap/array3/Array3Group6BH.jspx"/>
+		<!-- 直选和值 -->
+	<mvc:view-controller path="/wap/array3/Array3DirectSelectionHeZhi.jspx"/>
+		<!-- 组选和值-->
+	<mvc:view-controller path="/wap/array3/Array3GroupHeZhi.jspx"/>
+		<!-- 组六单式 -->
+	<mvc:view-controller path="/wap/array3/Array3Group6.jspx"/>
+		<!-- 组三和值-->
+	<mvc:view-controller path="/wap/array3/Array3Group3HeZhi.jspx"/>
+		<!-- 组六和值-->
+	<mvc:view-controller path="/wap/array3/Array3Group6HeZhi.jspx"/>
+		<!-- 修改-->
+	<mvc:view-controller path="/wap/array3/Array3modifyAutoSelection.jspx"/>
+	<!-- 七星彩 -->
+		<!-- 首页 -->
+	<mvc:view-controller path="/wap/sevenStar/7StarIndex.jspx"/>
+		<!-- 修改 -->
+	<mvc:view-controller path="/wap/sevenStar/7starAutoModify.jspx"/>
+	<mvc:view-controller path="/wap/sevenStar/xiugaidd.jspx"/>
+	<mvc:view-controller path="/wap/sevenStar/7starMulipleAutoModify.jspx"/>
+		<!-- 自选 -->
+	<mvc:view-controller path="/wap/sevenStar/sevenStarByHand.jspx"/>
+		<!-- 机选 -->
+	<mvc:view-controller path="/wap/sevenStar/SingleAutoSelection.jspx"/>
+		<!-- 复式机选 -->
+	<mvc:view-controller path="/wap/sevenStar/MulipleAutoSelection.jspx"/>
+		<!-- 定胆 -->
+	<mvc:view-controller path="/wap/sevenStar/ddSevenStar.jspx"/>
+	<!-- 排列五 -->
+		<!-- 首页 -->
+	<mvc:view-controller path="/wap/array5/array5Index.jspx"/>
+	<mvc:view-controller path="/wap/jc/jclqIndex.jspx"/>
+		<!-- 修改 -->
+	<mvc:view-controller path="/wap/array5/modifyAutoSelection.jspx"/>
+	<mvc:view-controller path="/wap/array5/ModifyMulipleAuto.jspx"/>
+		<!-- 自选 -->
+	<mvc:view-controller path="/wap/array5/array5ByHand.jspx"/>
+		<!-- 单式 -->
+	<mvc:view-controller path="/wap/array5/singleAutoSelection.jspx"/>
+		<!-- 复式 -->
+	<mvc:view-controller path="/wap/array5/MulipleAutoSelection.jspx"/>
+	<!-- 22选5 -->
+		<!-- 首页 -->
+	<mvc:view-controller path="/wap/22select5/22select5Index.jspx"/>
+	<!-- 足彩 -->
+		<!-- 首页 -->
+	<mvc:view-controller path="/wap/zc/zcIndex.jspx"/>
+	<!-- 帮助 -->
+		<!-- 首页 -->
+	<mvc:view-controller path="/wap/help/help.jspx"/>
+	<mvc:view-controller path="/wap/help/help1.jspx"/>
+	<mvc:view-controller path="/wap/help/help2.jspx"/>
+	<mvc:view-controller path="/wap/help/help3.jspx"/>
+	<mvc:view-controller path="/wap/help/help4.jspx"/>
+	<mvc:view-controller path="/wap/help/help5.jspx"/>
+	<mvc:view-controller path="/wap/help/help6.jspx"/>
+	<mvc:view-controller path="/wap/help/help7.jspx"/>
+	<mvc:view-controller path="/wap/help/help8.jspx"/>
+	<mvc:view-controller path="/wap/help/help9.jspx"/>
+	<mvc:view-controller path="/wap/help/help10.jspx"/>
+	<mvc:view-controller path="/wap/help/help11.jspx"/>
+	<mvc:view-controller path="/wap/help/help12.jspx"/>
+	<mvc:view-controller path="/wap/help/help13.jspx"/>
+	<mvc:view-controller path="/wap/help/help14.jspx"/>
+	<mvc:view-controller path="/wap/help/help15.jspx"/>
+	<mvc:view-controller path="/wap/help/help16.jspx"/>
+		<!-- 注意事项 -->
+	<mvc:view-controller path="/wap/help/attention.jspx"/>
+		<!-- 追号服务-->
+	<mvc:view-controller path="/wap/help/addNumberService.jspx"/>
+		<!-- 充值费用-->
+	<mvc:view-controller path="/wap/help/chargeIntroduce.jspx"/>
+		<!-- 关于我们 -->
+	<mvc:view-controller path="/wap/help/aboutUs.jspx"/>
+		<!-- 充值帮助 -->
+	<mvc:view-controller path="/wap/help/howCharge.jspx"/>
+		<!-- 购彩安全 -->
+	<mvc:view-controller path="/wap/help/buySafe.jspx"/>
+		<!-- 如何投注 -->
+	<mvc:view-controller path="/wap/help/howBet.jspx"/>
+		<!-- 如何兑奖 -->
+	<mvc:view-controller path="/wap/help/howReward.jspx"/>
+		<!-- 如何提款 -->
+	<mvc:view-controller path="/wap/help/howTCash.jspx"/>
+		<!-- 如何获得积分 -->
+	<mvc:view-controller path="/wap/help/howScore.jspx"/>
+	<!-- 玩法介绍 -->
+		<!-- 首页 -->
+	<mvc:view-controller path="/wap/playIntroduced/introduce.jspx"/>
+		<!-- 双色球 -->
+	<mvc:view-controller path="/wap/playIntroduced/introduceDouble.jspx"/>
+		<!-- 3D -->
+	<mvc:view-controller path="/wap/playIntroduced/introduce3D.jspx"/>
+		<!-- 大乐透 -->
+	<mvc:view-controller path="/wap/playIntroduced/introduceDaletou.jspx"/>
+		<!-- 排列三 -->
+	<mvc:view-controller path="/wap/playIntroduced/introduceArray3.jspx"/>
+		<!-- 排列五 -->
+	<mvc:view-controller path="/wap/playIntroduced/introduceArray5.jspx"/>
+		<!-- 时时彩 -->
+	<mvc:view-controller path="/wap/playIntroduced/introduceShishicai.jspx"/>
+		<!-- 七乐彩 -->
+	<mvc:view-controller path="/wap/playIntroduced/introduceQilecai.jspx"/>
+		<!-- 七星彩 -->
+	<mvc:view-controller path="/wap/playIntroduced/introduce7Star.jspx"/>
+		<!-- 足彩 -->
+	<mvc:view-controller path="/wap/playIntroduced/introduceZucai.jspx"/>
+		<!-- 22选5 -->
+	<mvc:view-controller path="/wap/playIntroduced/introduce22Select5.jspx"/>
+		<!-- 十一运夺金-->
+	<mvc:view-controller path="/wap/playIntroduced/introduceduojin.jspx"/>
+		<!--江西11选5-->
+	<mvc:view-controller path="/wap/playIntroduced/introduceJiangXiElevenSelectFive.jspx"/>
+		<!-- 广东11选5-->
+	<mvc:view-controller path="/wap/playIntroduced/introduceGuangDongElevenSelectFive.jspx"/>
+		<!-- 广东快乐10分-->
+	<mvc:view-controller path="/wap/playIntroduced/introduceGuangDongHappyTenMinutes.jspx"/>
+		<!-- 竞彩篮球-->
+	<mvc:view-controller path="/wap/playIntroduced/introduceJClq.jspx"/>
+		<!-- 竞彩足球-->
+	<mvc:view-controller path="/wap/playIntroduced/introduceJCzq.jspx"/>
+		<!-- 合买 -->
+	<mvc:view-controller path="/wap/playIntroduced/introduceHemai.jspx"/>
+	<!-- 追号 -->
+		<!-- 停止追号 -->
+	<mvc:view-controller path="/wap/query/stopAddNumberConfirm.jspx"/>
+	<!-- 合买 -->
+		<!-- 双色球 -->
+	<mvc:view-controller path="/wap/DoubleBall/issuehm/dantuo_do.jspx"/>
+	<mvc:view-controller path="/wap/DoubleBall/issuehm/dantuo.jspx"/>
+	<mvc:view-controller path="/wap/DoubleBall/issuehm/dingdan_do.jspx"/>
+	<mvc:view-controller path="/wap/DoubleBall/issuehm/dingdan.jspx"/>
+	<mvc:view-controller path="/wap/DoubleBall/issuehm/index.jspx"/>
+	<mvc:view-controller path="/wap/DoubleBall/issuehm/ryrandom.jspx"/>
+	<mvc:view-controller path="/wap/DoubleBall/issuehm/do.jspx"/>
+	<mvc:view-controller path="/wap/DoubleBall/issuehm/random.jspx"/>
+	<mvc:view-controller path="/wap/DoubleBall/issuehm/ryrandom.jspx"/>
+	<!-- 3D -->
+	<mvc:view-controller path="/wap/3D/issuehm3D/singleSelectSingleMultipleHm.jspx"/>
+	<mvc:view-controller path="/wap/3D/issuehm3D/Group3hm.jspx"/>
+	<mvc:view-controller path="/wap/3D/issuehm3D/Group6hm.jspx"/>
+	<mvc:view-controller path="/wap/3D/issuehm3D/3DDirectSingle.jspx"/>
+	<!--七乐彩 -->
+	<mvc:view-controller path="/wap/qilecai/issuehmQlc/ryrandom.jspx"/>
+	<mvc:view-controller path="/wap/qilecai/issuehmQlc/DantuoQlchm.jspx"/>
+	<mvc:view-controller path="/wap/qilecai/issuehmQlc/DingdanQlchm.jspx"/>
+	<mvc:view-controller path="/wap/qilecai/issuehmQlc/QlcDirectSingle.jspx"/>
+	<mvc:view-controller path="/wap/qilecai/issuehmQlc/random.jspx"/>
+	<mvc:view-controller path="/wap/DoubleBall/issuehm/dantuo_do.jspx"/>
+	<!--合买查询 -->
+	<mvc:view-controller path="/wap/DoubleBall/join/hmDetailByJoin.jspx"/>
+	<mvc:view-controller path="/wap/DoubleBall/issuehm/dingdan_do.jspx"/>
+	<!-- 账号明细 -->
+	<mvc:view-controller path="/wap/accountDetail/accountDetail.jspx"/>
+	<!-- 投注查询 -->
+	<mvc:view-controller path="/wap/query/betingOrdersSelect.jspx"/>
+	<!-- 修改密码-->
+	<mvc:view-controller path="/wap/userinfo/updateUserPassword.jspx"/>
+	<!-- 关于-->
+	<mvc:view-controller path="/wap/help/aboutUs.jspx"/>
+	
+	<bean
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/WEB-INF/jsp/" />
+		<property name="suffix" value=".jsp" />
+	</bean>
+	<!-- 翰银 -->
+		<!-- 首页 -->
+	<mvc:view-controller path="/handpay/home.jspx"/>
+		<!-- 更多 -->
+	<mvc:view-controller path="/handpay/more.jspx"/>
+	<!-- 购彩 -->
+		<!-- 双色球 -->
+		<!-- 单式自选 -->
+	<mvc:view-controller path="/lottery/DoubleBall/doubleBallSelfSingle.jspx"/>
+		<!-- 单式机选 -->
+	<mvc:view-controller path="/lottery/DoubleBall/doubleBallAutoSingle.jspx"/>
+		<!-- 复式自选 -->
+	<mvc:view-controller path="/lottery/DoubleBall/doubleBallSelfMultiple.jspx"/>
+		<!-- 复式机选 -->
+	<mvc:view-controller path="/lottery/DoubleBall/doubleBallAutoMultiple.jspx"/>
+		<!-- 福彩3D -->
+		<!-- 直选投注 -->
+		<!-- 组三单式 -->
+	<mvc:view-controller path="/lottery/3D/3DGroup3Single.jspx"/>
+		<!-- 组六单式 -->
+	<mvc:view-controller path="/lottery/3D/3DGroup6Single.jspx"/>
+		<!-- 复式投注 -->
+	<mvc:view-controller path="/lottery/3D/3DMultiple.jspx"/>
+		<!-- 和值投注 -->
+	<mvc:view-controller path="/lottery/3D/3DHeZhi.jspx"/>
+		<!-- 七乐彩 -->
+		<!-- 单式自选 -->
+	<mvc:view-controller path="/lottery/qilecai/qilecaiSelfSingle.jspx"/>
+		<!-- 单式机选 -->
+	<mvc:view-controller path="/lottery/qilecai/qilecaiAutoSingle.jspx"/>
+		<!-- 复式自选 -->
+	<mvc:view-controller path="/lottery/qilecai/qilecaiSelfMultiple.jspx"/>
+		<!-- 复式机选 -->
+	<mvc:view-controller path="/lottery/qilecai/qilecaiAutoMultiple.jspx"/>
+	
+
+</beans>

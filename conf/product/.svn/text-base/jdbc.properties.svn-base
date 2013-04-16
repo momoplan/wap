@@ -1,0 +1,11 @@
+
+driver=oracle.jdbc.driver.OracleDriver
+url=jdbc:oracle:thin:@192.168.99.3:1521:jrtdb
+username=jrtsch
+password=jrtsch
+
+
+non.db.driver=com.mysql.jdbc.Driver
+non.db.url=jdbc:mysql://192.168.99.8/sms?characterEncoding=utf-8
+non.db.username=jrtConsole
+non.db.password=jrtConsole

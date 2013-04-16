@@ -1,0 +1,18 @@
+<%@ page pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<title>赠送查询</title>
+<body>
+<a href="/w/wap/wapindex.jspx">首页</a>-领取彩票<br/><br/>
+${messageError }<br/>
+<form action="/w/BetingSelectAction/recivePresent.jspa" method="post">
+验证码：<input name="randomCode" type="text" value=""><br/>
+(请输入您收到的验证码)<br/>
+<input name="presentid" type="hidden" value="${presentid }"/>
+<input type="submit" value="验证"/>
+
+</form>
+
+<br/>
+<a href="/w/wap/wapindex.jspx">返回上一页</a>
+
+</body>
