@@ -73,9 +73,15 @@ public class DrawCashController {
 			}
 			logger.info("DrawCashController/findDNAtoCash提现查询DNA绑定未绑定");
 		}
-		String name = tuserInfoBean.getName();
+		JSONObject object = CommonUtil.getUserinfoByUserno(userno);
+		if (object.getString("errorCode") != null
+				&& !object.getString("errorCode").trim().equals("")
+				&& object.getString("errorCode").equals("0")) {
+			JSONObject valueJsonObject = JSONObject.fromObject("value");
+		String name = valueJsonObject.getString("name");
 		if(name!=null&&!"".equals(name)&&!"null".equals(name)){
 			model.addAttribute("name", name) ;
+		}
 		}
 		return "wap/drawCash/drawCashIndex";
 	}
