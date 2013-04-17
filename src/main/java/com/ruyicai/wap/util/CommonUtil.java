@@ -7215,6 +7215,7 @@ public class CommonUtil {
 		} catch (JSONException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			return jsonObject;
 		}
 		return jsonObject;
 	}
@@ -7239,6 +7240,7 @@ public class CommonUtil {
 		} catch (JSONException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			return jsonObject;
 		}
 		return jsonObject;
 	}

@@ -45,6 +45,7 @@ public class DrawCashController {
 		logger.info("DrawCashController/findDNAtoCash");
 		TuserInfoBean tuserInfoBean =(TuserInfoBean)request.getSession().getAttribute("user");
 		String userno = tuserInfoBean.getUserno();
+		String userName = tuserInfoBean.getUserName();
 		//查询可提现金额
 		Map<String, String> map = new HashMap<String, String>();
 		map = CommonUtil.getBalance(userno);
@@ -73,11 +74,9 @@ public class DrawCashController {
 			}
 			logger.info("DrawCashController/findDNAtoCash提现查询DNA绑定未绑定");
 		}
-		JSONObject object = CommonUtil.getUserinfoByUserno(userno);
-		if (object.getString("errorCode") != null
-				&& !object.getString("errorCode").trim().equals("")
-				&& object.getString("errorCode").equals("0")) {
-			JSONObject valueJsonObject = JSONObject.fromObject("value");
+		JSONObject object = CommonUtil.getUserinfoByUserName(userName);
+		if (object != null&& object.getString("errorCode").equals("0")) {
+			JSONObject valueJsonObject = object.getJSONObject("value");
 		String name = valueJsonObject.getString("name");
 		if(name!=null&&!"".equals(name)&&!"null".equals(name)){
 			model.addAttribute("name", name) ;
