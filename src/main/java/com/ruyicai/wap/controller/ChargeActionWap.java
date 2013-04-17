@@ -109,9 +109,14 @@ public class ChargeActionWap {
 			} else {
 				request.setAttribute("dnaMessage", MessageUtil.CAW_getDNA_Fail);
 				request.setAttribute("userinfo", jsonObject3);
-				String name = tuserInfoBean.getName();
+				JSONObject o = CommonUtil.getUserinfoByUserName(userName);
+				if (o != null&& o.getString("errorCode").equals("0")) {
+					JSONObject valueJsonObject = o.getJSONObject("value");
+				String name = valueJsonObject.getString("name");
+
 				if(!"".equals(name)&&name!=null&&!"null".equals(name)){
 					request.setAttribute("chargeName", name);
+				}
 				}
 				return "wap/charge/chargeByDNAAll";
 			}
