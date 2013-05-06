@@ -257,7 +257,7 @@
 <div class="contant">
 &nbsp<a href="http://itunes.apple.com/cn/app/ru-yi-cai-nin-shen-bian-cai/id492164095?mt=8"><img
 		src="/w/wap/newImages/p.png" alt="立即下载"></img>Iphone客户端下载</a><br/>
-	&nbsp<a href="/w/wap/client/down/android/ruyicai_android_3.7.0_533_wapguanwang.apk"><img 
+	&nbsp<a href="/w/wap/client/down/android/ruyicai_android_3.7.2_533_wapguanwang.apk"><img 
 		src="/w/wap/newImages/a.png" alt="立即下载"></img>Android客户端下载</a><br/>
 	&nbsp<a href="/w/wap/client/down/symbian/ruyicai_S60_V5_1.2_779_gwwap.sisx"><img
 		src="/w/wap/newImages/s.png" alt="立即下载"></img>客户端下载</a><br/>

@@ -121,13 +121,13 @@
 	<c:if test="${infos.support != 'unsupport' }">
 		<div>${infos.newweek }${infos.teamid }: ${infos.league0} ${infos.endTime}</div>
 		<div class="greenbg">
-			${infos.team2 }<span style="color: gray;">vs</span>${infos.team1} 
+			${infos.team2 }<span style="color: gray;">${infos.peilv != 'null'? infos.peilv.letVs.letPoint:''}</span>${infos.team1} 
 		</div>
 		<c:if test="${infos.peilv != 'null'}">
 		<label class="checkboxLabel"><input type="checkbox" name="sheng"
-			value="${infos.newweek }|${infos.teamid }|${infos.league0}|${infos.day}|${infos.team2 }vs${infos.team1}|主胜|${infos.weekid}" id=""><span>主胜(${infos.peilv.vs.v3})</span></label>
+			value="${infos.newweek }|${infos.teamid }|${infos.league0}|${infos.day}|${infos.team2 }vs${infos.team1}|主胜|${infos.weekid}" id=""><span>主胜(${infos.peilv.letVs.v3})</span></label>
 		<label class="checkboxLabel"><input type="checkbox" name="fu"
-			value="${infos.newweek }|${infos.teamid }|${infos.league0}|${infos.day}|${infos.team2 }vs${infos.team1}|主负|${infos.weekid}" id=""><span>主负(${infos.peilv.vs.v0})</span></label>
+			value="${infos.newweek }|${infos.teamid }|${infos.league0}|${infos.day}|${infos.team2 }vs${infos.team1}|主负|${infos.weekid}" id=""><span>主负(${infos.peilv.letVs.v0})</span></label>
 		</c:if>
 		<c:if test="${infos.peilv == 'null'}">
 		<label class="checkboxLabel"><input type="checkbox" name="sheng"
@@ -167,13 +167,13 @@
 	<c:if test="${infos.support != 'unsupport' }">
 		<div>${infos.newweek }${infos.teamid }: ${infos.league0} ${infos.endTime}</div>
 		<div class="greenbg">
-			${infos.team2 }<span style="color: gray;">vs</span>${infos.team1} 
+			${infos.team2 }<span style="color: gray;">${infos.peilv != 'null'? infos.peilv.letVs.letPoint:''}</span>${infos.team1} 
 		</div>
 		<c:if test="${infos.peilv != 'null'}">
 		<label class="checkboxLabel"><input type="checkbox" name="jclq"
-			value="${infos.newweek }|${infos.teamid }|${infos.league0}|${infos.day}|${infos.team2 }vs${infos.team1}|主胜|${infos.weekid}|3" id=""><span>主胜(${infos.peilv.vs.v3})</span></label>
+			value="${infos.newweek }|${infos.teamid }|${infos.league0}|${infos.day}|${infos.team2 }vs${infos.team1}|主胜|${infos.weekid}|3" id=""><span>主胜(${infos.peilv.letVs.v3})</span></label>
 		<label class="checkboxLabel"><input type="checkbox" name="jclq"
-			value="${infos.newweek }|${infos.teamid }|${infos.league0}|${infos.day}|${infos.team2 }vs${infos.team1}|主负|${infos.weekid}|0" id=""><span>主负(${infos.peilv.vs.v0})</span></label>
+			value="${infos.newweek }|${infos.teamid }|${infos.league0}|${infos.day}|${infos.team2 }vs${infos.team1}|主负|${infos.weekid}|0" id=""><span>主负(${infos.peilv.letVs.v0})</span></label>
 		</c:if>
 		<c:if test="${infos.peilv == 'null'}">
 		<label class="checkboxLabel"><input type="checkbox" name="jclq"
@@ -357,8 +357,7 @@
 		预设总分:SP${infos.peilv.bs.basePoint}<br>
 		<label class="checkboxLabel"><input type="checkbox" name="da"
 			value="${infos.newweek }|${infos.teamid }|${infos.league0}|${infos.day}|${infos.team2 }vs${infos.team1}|大分|${infos.weekid}" id=""><span>大分(SP${infos.peilv.bs.g})</span></label>
-			让${infos.peilv.letVs.letPoint}
-		<label class="checkboxLabel">
+ 		<label class="checkboxLabel">
 		<input type="checkbox" name="xiao"
 			value="${infos.newweek }|${infos.teamid }|${infos.league0}|${infos.day}|${infos.team2 }vs${infos.team1}|小分|${infos.weekid}" id=""><span>小分(SP${infos.peilv.bs.l})</span></label>
 		</c:if>
@@ -366,7 +365,6 @@
 		预设总分<br>
 		<label class="checkboxLabel"><input type="checkbox" name="da"
 			value="${infos.newweek }|${infos.teamid }|${infos.league0}|${infos.day}|${infos.team2 }vs${infos.team1}|大分|${infos.weekid}" id=""><span>大分</span></label>
-			让
 		<label class="checkboxLabel">
 		<input type="checkbox" name="xiao"
 			value="${infos.newweek }|${infos.teamid }|${infos.league0}|${infos.day}|${infos.team2 }vs${infos.team1}|小分|${infos.weekid}" id=""><span>小分</span></label>
@@ -409,7 +407,6 @@
 		预设总分:SP${infos.peilv.bs.basePoint}<br>
 		<label class="checkboxLabel"><input type="checkbox" name="jclq"
 			value="${infos.newweek }|${infos.teamid }|${infos.league0}|${infos.day}|${infos.team2 }vs${infos.team1}|大分|${infos.weekid}|1" id=""><span>大分(SP${infos.peilv.bs.g})</span></label>
-			让${infos.peilv.letVs.letPoint}
 		<label class="checkboxLabel">
 		<input type="checkbox" name="jclq"
 			value="${infos.newweek }|${infos.teamid }|${infos.league0}|${infos.day}|${infos.team2 }vs${infos.team1}|小分|${infos.weekid}|2" id=""><span>小分(SP${infos.peilv.bs.l})</span></label>
@@ -418,7 +415,6 @@
 		预设总分<br>
 		<label class="checkboxLabel"><input type="checkbox" name="jclq"
 			value="${infos.newweek }|${infos.teamid }|${infos.league0}|${infos.day}|${infos.team2 }vs${infos.team1}|大分|${infos.weekid}|1" id=""><span>大分</span></label>
-			让
 		<label class="checkboxLabel">
 		<input type="checkbox" name="jclq"
 			value="${infos.newweek }|${infos.teamid }|${infos.league0}|${infos.day}|${infos.team2 }vs${infos.team1}|小分|${infos.weekid}|2" id=""><span>小分</span></label>
