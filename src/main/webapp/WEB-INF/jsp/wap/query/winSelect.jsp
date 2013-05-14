@@ -277,7 +277,7 @@ if(listball!=null){
 	href="/w/select/lotterySelectByType.jspx?lotno=T01015&qiShu=10">历史</a>·<a
 	href="/w/leaveOut/leaveOutDetail.jspx?lotno=T01015&batchcode=<%=batchcodelistGuangDongHappyTenMinutes%>&key=T01015MV_S1&type=S1">遗漏</a>·<a 
 	href="/w/wap/trendChart/trendChartKL10.jspx">走势</a>·<a
-	href="/w/guangDongElevenSelectFiveIndex/optionOneSelf.jspx">购买</a> <br /><br />
+	href="/w/guangDongHappyTenMinutesIndex/selectOneNumberSelf.jspx">购买</a> <br /><br />
 </div>
 <%} %>
 <%if(listZC14!=null){%>
