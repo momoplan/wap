@@ -32,7 +32,7 @@
 		%>大乐透<br/>
 		自选|<a 
 		   href="/w/wap/daletou/SingleAutoSelection.jspx">机选</a><br/>
-		复式自选|<a href="/wap/daletou/DantuoSelfSelection.jspx">胆拖自选</a>|<a href="/wap/daletou/ShengXiaoSelection.jspx">12选2自选</a><br/>
+		复式自选|<a href="/wap/daletou/DantuoSelfSelection.jspx">胆拖自选</a><!-- |<a href="/wap/daletou/ShengXiaoSelection.jspx">12选2自选</a> --><br/>
 			号码间无空格,小于10则补0。如:选02球06球20球则填写020620。<br/>
 			<%if (deadline!=null) { %>
 				<%out.print(deadline); %><br/>

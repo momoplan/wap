@@ -35,7 +35,7 @@
 		%>大乐透<br/>
 		自选|<a 
 		   href="/w/wap/daletou/SingleAutoSelection.jspx">机选</a><br/>
-		<a href="/wap/daletou/SingleSelfSelection.jspx">复式自选</a>|胆拖自选|<a href="/wap/daletou/ShengXiaoSelection.jspx">12选2自选</a><br/>
+		<a href="/wap/daletou/SingleSelfSelection.jspx">复式自选</a>|胆拖自选<!-- |<a href="/wap/daletou/ShengXiaoSelection.jspx">12选2自选</a> --><br/>
 		
 			(号码间无空格,小于10则补0。如:选02球06球20球则填写020620。前区胆码和前区拖码从01-35中选，前区胆码和拖码总数至少6个，后区胆码从01-12中选。)<br/>
 			<%if (deadline!=null) { %>
