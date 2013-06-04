@@ -8,8 +8,10 @@
 	如意彩票手机客户端下载<br/>
 	&nbsp&nbsp<a href="http://itunes.apple.com/cn/app/ru-yi-cai-nin-shen-bian-cai/id492164095?mt=8"><img
 		src="/w/wap/newImages/p.png" alt="立即下载"></img>Iphone客户端下载</a><br/>
-	&nbsp&nbsp<a href="/w/wap/client/down/android/ruyicai_android_3.7.2_533_wapguanwang.apk"><img 
+	&nbsp&nbsp<a href="/w/wap/client/down/android/ruyicai_android_3.8.0_533_wapguanwang.apk"><img 
 		src="/w/wap/newImages/a.png" alt="立即下载"></img>Android客户端下载</a><br/>
+	&nbsp&nbsp<a href="http://www.windowsphone.com/zh-cn/store/app/%E5%A6%82%E6%84%8F%E5%BD%A9/b0bda9c5-2887-47e2-a487-ac9f481e8632"><img 
+		src="/w/wap/images/wp8.png" alt="立即下载"></img>Windows Phone客户端下载</a><br/>
 	&nbsp&nbsp<a href="/w/wap/client/down/symbian/ruyicai_S60_V5_1.2_779_gwwap.sisx"><img
 		src="/w/wap/newImages/s.png" alt="立即下载"></img>客户端下载</a><br/>
  &nbsp&nbsp<img alt="" src="/w/wap/images/client_1.jpg"><br/>

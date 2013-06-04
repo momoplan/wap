@@ -39,7 +39,7 @@ href="<%=request.getContextPath()%>/jc/jczqAgainst.jspx?type=1&valueType=1&wanfa
 			</c:when>
 			<c:otherwise>
 				<div class="greenbg">
-					${infos.team1 }<span style="color: gray;">${infos.peilv.vs.letPoint }</span>${infos.team2} 
+					${infos.team1 }<span style="color: gray;">vs</span>${infos.team2} 
 				</div>
 				<label class="checkboxLabel"><input type="checkbox" name="jczq"
 					value="${infos.newweek }|${infos.teamid }|${infos.league0}|${infos.day}|${infos.team1 }vs${infos.team2}|胜|${infos.weekid}|3" id=""><span>胜(${infos.peilv.vs.v3})</span></label>
@@ -98,7 +98,7 @@ href="<%=request.getContextPath()%>/jc/jczqAgainst.jspx?type=1&valueType=1&wanfa
 			</c:when>
 			<c:otherwise>
 				<div class="greenbg">
-					${infos.team1 }<span style="color: gray;">${infos.peilv.vs.letPoint }</span>${infos.team2} 
+					${infos.team1 }<span style="color: gray;">vs</span>${infos.team2} 
 				</div>
 				<label class="checkboxLabel"><input type="checkbox" name="jczq"
 					value="${infos.newweek }|${infos.teamid }|${infos.league0}|${infos.day}|${infos.team1 }vs${infos.team2}|胜|${infos.weekid}|3" id=""><span>胜(${infos.peilv.vs.v3})</span></label>
