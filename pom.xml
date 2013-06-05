@@ -11,6 +11,7 @@
 		<maven.test.skip>true</maven.test.skip>
 	</properties>
 	<build>
+	        <finalName>w</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
